@@ -1,0 +1,26 @@
+name: Greetings
+
+on:
+  fork:
+  push:
+    branches: [ develop ]
+  issues:
+    types: [ opened ]
+  issue_comment:
+    types: [ created ]
+  pull_request_target:
+    types: [ opened ]
+  pull_request_review_comment:
+    types: [ created ]
+
+jobs:
+
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: EddieHubCommunity/gh-action-community/src/welcome@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: '<h1>It''s great having you contribute to this project :nerd_face:</h1> Thank you for the <strong>Issue</strong> :heart_eyes:'
+          pr-message: '<h1>It''s great having you contribute to this project :nerd_face:</h1> Thank you for the <strong>PR</strong> :heart_eyes:'
