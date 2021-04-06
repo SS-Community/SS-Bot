@@ -1,4 +1,6 @@
-# SS Bot
+![SS BOT GH Banner](https://user-images.githubusercontent.com/24972335/113740224-2ff4bc00-9709-11eb-8edb-80ab77244b83.png)
+
+---
 
 General purpose Discord bot
 
