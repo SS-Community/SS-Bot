@@ -1,6 +1,6 @@
-# Project Name
+# SS Bot
 
-Project Description
+General purpose Discord bot
 
 ## Live Version
 
